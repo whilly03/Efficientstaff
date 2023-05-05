@@ -1,0 +1,642 @@
+/**************************/
+/* HEADER */
+/**************************/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+
+    /* Because we want header to be sticky later */
+    height: 9rem;
+    padding: 0 4.8rem;
+    position: relative;
+}
+
+.logo {
+    height: 6rem;
+}
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+.main-nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.8rem;
+    transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+    color: #024059;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+    padding: 1.2rem 2.4rem;
+    border-radius: 9px;
+    color: #fff;
+    background-color: #024059;
+    position: relative;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+    background-color: #025879;
+}
+
+/* MOBILE */
+.btn-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    display: none;
+}
+
+.icon-mobile-nav {
+    height: 4.8rem;
+    width: 4.8rem;
+    color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+    display: none;
+}
+
+/* STICKY NAVIGATION */
+.sticky .header {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 8rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: rgba(255, 255, 255, 0.97);
+    z-index: 999;
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .section-hero {
+    margin-top: 9.6rem;
+}
+
+/**************************/
+/* HOW IT WORKS SECTION */
+/**************************/
+
+.section-how {
+    padding: 9.6rem 0;
+}
+
+.how-it-works {
+    position: relative;
+}
+
+
+.learn--more {
+position: absolute;
+top: 0;
+right: 0;
+transform: translate(0, 50%);
+}
+
+.how-it-works-list {
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    padding: 8rem 4rem;
+    text-align: center;
+    border-radius: 11px;
+    transition: all 0.5s;
+}
+
+.works-cta {
+    background-color: #023347;
+    color: white;
+}
+
+.how-it-works-list:hover {
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    transform: translateY(-1.3rem);
+    cursor: pointer;
+}
+
+
+.how-it-works-img {
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 2rem;
+}
+
+.works-heading {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #1B93A6;
+}
+
+.works-subhead {
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+/* Processing Step Section */
+
+.step-section {
+    background-color: #023347;
+    padding: 2rem 0;
+    margin-top: -1rem;
+    position: relative;
+
+}
+
+.step-listing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 80rem;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+
+}
+
+.step-icon {
+    width: 16rem;
+    height: 16rem;
+    margin: 4rem 0;
+    transition: all 0.5s;
+}
+
+.step-icon:hover {
+    transform: scale(1.1);
+}
+
+.step-description {
+    color: white;
+    line-height: 1.2;
+    font-size: 1.6rem;
+}
+
+.steps-line {
+    width: 60rem;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+/* Why Choose Us Section */
+
+.why-choose-section {
+    margin-bottom: 9.6rem;
+}
+
+.why-choose-text {
+    text-align: right;
+}
+
+.decision {
+    background-color: #023347;
+ /*
+    display: flex;
+    justify-content: space-around; */
+    padding: 6rem;
+}
+
+.why-choose-listing {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.why-choose-img {
+    width: 8rem;
+    height: 8rem;
+}
+
+.why-choose-heading {
+    margin-bottom: 4rem;
+}
+
+.why-choose-description {
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+/* About Us Section */
+
+.about-section {
+    margin-bottom: 9.6rem;
+}
+
+.about-img {
+    overflow: hidden;
+}
+
+.about-us-img {
+    width: 100%;
+    border-radius: 11px;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    transition: all 0.5s;
+}
+
+.about-us-img:hover {
+    transform: scale(1.1);
+}
+
+.about-us-small {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.about-us-heading {
+    font-size: 3rem;
+    color: #1B93A6;
+    font-weight: 600;
+    margin: 1rem 1rem;
+}
+
+.about-us-text-img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.about-us-text-description {
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+
+/* Jobs Section */
+
+.job-section {
+    margin: 12rem 0;
+}
+
+.job-list {
+    row-gap: 4rem;
+}
+
+.job-listing {
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    padding: 6rem 4rem;
+    border-radius: 11px;
+    transition: all 0.3s;
+}
+
+.job-listing:hover {
+    background-color: #023347;
+    color: white;
+    transform: translateY(-2rem);
+}
+
+.job-urgent {
+    display: inline-block;
+    background-color: #EAF1FE;
+    padding: 0.8rem 1.2rem;
+    margin-bottom: 2rem;
+    border-radius: 9px;
+    font-size: 1.4rem;
+    color: #1974FF;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.job-subject {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+
+.job-description {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.job-btn {
+    margin-top: 4rem;
+}
+.job-btn-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.job-btn-list li, a {
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    color: #fff;
+}
+
+.job-icon {
+    font-size: 1.5rem;
+}
+
+.job-btn-list a:link,
+.job-btn-list a:visited {
+    font-size: 2rem;
+    background-color: #1974FF;
+    padding: 1rem;
+    color: white;
+    border-radius: 9px;
+    font-weight: 600;
+}
+
+.job-btn-list a:hover,
+.job-btn-list a:active {
+    background-color: #1B93A6;
+}
+
+
+/* faq section */
+
+.faq-section {
+    width: 100%;
+    background-color: #023347;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    color: #fff;
+}
+
+.faq-section>span {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.faq-section>h3 {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 75px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+ul.faqs {
+    list-style-type: none;
+    max-width: 800px;
+    width: 100%;
+    padding: 40px 0;
+    transition: all 0.5s;
+}
+
+li.faq {
+    padding: 20px 0;
+    border-bottom: 1px solid #8DC9D3;
+    transition: all ease-in-out 500s;
+}
+
+.faq-head {
+    display: grid;
+    grid-template-columns: 1fr 20px;
+    gap: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 35px;
+    color: #C6E4E9;
+    cursor: pointer;
+}
+
+.faq-head img {
+    width: 100%;
+}
+
+.img-open {
+    display: none;
+}
+
+.faq.active .img-open,
+.faq.active .faq-answer {
+    display: block;
+}
+
+.faq.active .img-close {
+    display: none;
+}
+
+.faq-answer {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    display: none;
+    color: #fff;
+    transition: all ease-in-out 500s;
+    padding-top: 10px;
+}
+
+
+/**************************/
+/* CTA */
+/**************************/
+
+.section-cta {
+    /* top / right / bottom / left */
+    /* padding: 9.6rem 0 12.8rem 0; */
+
+    /* top / horizontal / left */
+    padding: 12.8rem 12.8rem;
+    background-image: url(/Img/ctabackground.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.cta {
+    display: grid;
+    /* 2/3 = 66.6% + 1/3 = 33.3% */
+    grid-template-columns: 2fr 1fr;
+    background-color: #1B93A6; 
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+    border-radius: 11px;
+
+/* background-image: linear-gradient(to right bottom, #eb984e, #e67e22); */
+    overflow: hidden;
+}
+
+.cta-text-box {
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    color: #023347;
+}
+
+.cta .heading-secondary {
+    color: inherit;
+    margin-bottom: 6.2rem;
+}
+
+.cta-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+    background-image: 
+        url("/Img/CTA.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.cta-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+}
+
+.cta-form label {
+    color: #fff;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: #fdf2e9;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.myfile {
+    outline: none;
+    cursor: pointer;
+}
+
+.cta-form input::placeholder {
+    color: #aaa;
+}
+
+.cta *:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************/
+/* FOOTER */
+/**************************/
+
+.footer {
+    padding: 12.8rem 0;
+    background-color: #023347;
+}
+
+.grid--footer {
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 3.2rem;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+}
+
+.social-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.copyright {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: white;
+    margin-top: auto;
+}
+
+.footer-heading {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.contacts {
+    color: white;
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.address {
+    margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: white;
+    transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+    color: #8DC9D3;
+}
+

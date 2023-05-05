@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Efficient Staff Education is to connect exceptional educators with schools and institutions that share our commitment to academic excellence and student success."
+    />
+
+    <!-- This is Important!! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="Img/favicon Logo.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="js/script.js"></script>
+
+    <title>Efficient Staff &mdash; Provide recruitment services!</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img class="logo" alt="Efficient logo" src="Img/efficient logo.svg" />
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#how">Home</a></li>
+          <li><a class="main-nav-link" href="#about">About Us</a></li>
+          <li><a class="main-nav-link" href="#job">Jobs</a></li>
+          <li><a class="main-nav-link" href="#faq">FAQs</a></li>
+          <li><a class="main-nav-link" href="#contact">Contact Us</a></li>
+          <li>
+            <a class="main-nav-link nav-cta" href="#contact">Login/Register</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+
+      <section class="section-hero">
+        <div class="hero-section">
+          <div class="slider-imgs">
+            <img
+              src="Img/assets/images/african-american-businesswoman-passing-documents-colleague 1.webp"
+              alt="slid1"
+            />
+            <img
+              class="slid-img-1"
+              src="Img/assets/images/dl.beatsnoop 2.webp"
+              alt="slid2"
+            />
+            <img
+              class="slid-img-2"
+              src="Img/assets/images/young-men-women-sitting-office-working-laptops-emotions-concept 1 (1).webp"
+              alt="slid3"
+            />
+          </div>
+          <div class="hero-overlay" id="hero-overlay">
+            <h3>
+              <a
+                href=""
+                class="typewrite"
+                data-period="2000"
+                data-type='[ "LET START.", "YOUR CAREER HERE!.", "BROWSE OUR JOB.", "LISTINGS NOW!." ]'
+              >
+                <span class="wrap"></span>
+              </a>
+            </h3>
+            <!-- <span>LET START YOUR CAREER HERE!</span> -->
+            <!-- <h3>Browse our job listings now!</h3> -->
+            <div class="filter-search">
+              <div class="search">
+                <form action="#">
+                  <div class="select-wrap">
+                    <span></span>
+                    <select name="post" id="post">
+                      <option value="supply-teacher">Supply Teacher</option>
+                      <option value="year-1-teacher">Year 1 Teacher</option>
+                      <option value="SEN-teacher">SEN Teacher</option>
+                      <option value="exam-invigilator">Exam Invigilator</option>
+                      <option value="SEND-teaching-assistant">
+                        SEND Teaching Assistant
+                      </option>
+                      <option value="music-teacher">Music Teacher</option>
+                    </select>
+                  </div>
+                  <div class="select-wrap">
+                    <span></span>
+                    <select name="location" id="location">
+                      <option value="">Location</option>
+                      <option value="Eastern England">Eastern England</option>
+                      <option value="North East">North East</option>
+                      <option value="North West">North West</option>
+                      <option value="South East">South East</option>
+                      <option value="South Yorkshire">South Yorkshire</option>
+                      <option value="East Midlands">East Midlands</option>
+                      <option value="London">London</option>
+                      <option value="West Yorkshire">West Yorkshire</option>
+                      <option value="West Midlands">West Midlands</option>
+                      <option value="Wales">Wales</option>
+                      <option value="Wessex">Wessex</option>
+                    </select>
+                  </div>
+                  <div class="select-wrap">
+                    <span></span>
+                    <select name="specialization" id="specialization">
+                      <option value="">Specialization</option>
+                      <option value="Teacher">Subject Teacher</option>
+                      <option value="Teacher">Lab Technician</option>
+                      <option value="Teacher">Class Techer</option>
+                      <option value="Teacher">Asst. Class Techer</option>
+                    </select>
+                  </div>
+                  <div class="search-btn-wrap">
+                    <span></span>
+                    <button type="submit">Search</button>
+                  </div>
+                </form>
+              </div>
+              <div class="filter">
+                <span class="selected">Quick Searches</span>
+                <span>Primary School</span>
+                <span>Secondary School</span>
+                <span>Supply Teacher</span>
+                <span>English Teacher</span>
+                <span>Maths Teacher</span>
+                <span>Chemistry Teacher</span>
+                <span>Physics Teacher</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recruitment Processing step -->
+      <section class="step-section">
+        <div class="step-listing">
+          <div class="steps">
+            <img class="step-icon" src="Img/register.svg" alt="" />
+            <p class="step-description">Register Account to begin Applying</p>
+          </div>
+
+          <div class="steps">
+            <img class="step-icon" src="Img/Upload.svg" alt="" />
+            <p class="step-description">
+              Upload your resume & browse hundreds of Jobs
+            </p>
+          </div>
+
+          <div class="steps">
+            <img class="step-icon" src="/Img/Apply.svg" alt="" />
+            <p class="step-description">Apply for a job in seconds</p>
+          </div>
+          <img class="steps-line" src="Img/Line 1.svg" alt="" />
+        </div>
+      </section>
+
+      <!-- How it Works -->
+
+      <section class="section-how" id="how">
+        <div class="container how-it-works">
+          <span class="subheading">WHAT WE PROVIDE</span>
+          <h2 class="heading-secondary">
+            WE ARE ALWAYS OFFERING <br />
+            OPPORTUNITIES FOR GROWTH
+          </h2>
+
+          <div class="grid grid--3-cols grid--center-v">
+            <div class="how-it-works-list">
+              <img class="how-it-works-img" src="Img/Recruitment.svg" alt="" />
+              <p class="works-heading">Recruitment</p>
+              <p class="works-subhead">
+                We identify, source, screen, shortlist, and interview candidates
+                for positions.
+              </p>
+            </div>
+
+            <div class="how-it-works-list works-cta">
+              <img
+                class="how-it-works-img"
+                src="Img/HR Consulting.svg"
+                alt=""
+              />
+              <p class="works-heading">HR Consulting</p>
+              <p class="works-subhead">
+                Collaboration with strategic partners nationally and
+                internationally
+              </p>
+            </div>
+
+            <div class="how-it-works-list grid--center-h">
+              <img class="how-it-works-img" src="Img/Expertise.svg" alt="" />
+              <p class="works-heading">Expertise</p>
+              <p class="works-subhead">
+                We have a proven track record and industry expertise
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Us Section -->
+
+      <section class="why-choose-section">
+        <div class="container">
+          <div class="why-choose-text">
+            <span class="subheading">WHY CHOOSE US</span>
+            <h2 class="heading-secondary why-choose-heading">
+              MAKE BETTER CAREER DECISIONS
+            </h2>
+          </div>
+
+          <div class="decision grid grid--3-cols grid--decision-center">
+            <div class="why-choose-listing">
+              <img class="why-choose-img" src="Img/Hiring Service.svg" alt="" />
+              <p class="why-choose-description">
+                The Best Hiring Agency Service
+              </p>
+            </div>
+
+            <div class="why-choose-listing">
+              <img
+                class="why-choose-img"
+                src="Img/workers treatment.svg"
+                alt=""
+              />
+              <p class="why-choose-description">Best Treatment to Worker</p>
+            </div>
+
+            <div class="why-choose-listing">
+              <img
+                class="why-choose-img"
+                src="Img/Job Opportunity.svg"
+                alt=""
+              />
+              <p class="why-choose-description why--center">
+                Remote Jobs & opportunities
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us Section -->
+
+      <section class="about-section" id="about">
+        <div class="container">
+          <div class="how-it-works">
+            <span class="subheading">ABOUT US</span>
+            <h2 class="heading-secondary">
+              BRIDGE FOR INDUSTRIAL & <br />
+              CORPORATE DEVELOPMENT
+            </h2>
+            <button>
+              <a href="#how" class="btn learn--more btn--full"
+                >Learn more &darr;</a
+              >
+            </button>
+          </div>
+
+          <div class="about-us-right grid grid--2-cols">
+            <div class="about-img">
+              <img
+                class="about-us-img"
+                src="Img/about us.webp"
+                alt="about us picture"
+              />
+            </div>
+            <div class="about-text">
+              <div class="about-us-text">
+                <span class="about-us-small">
+                  <img
+                    class="about-us-text-img"
+                    src="Img/our mission.svg"
+                    alt="our mission icon"
+                  />
+                  <p class="about-us-heading">Our Mission</p>
+                </span>
+                <p class="about-us-text-description">
+                  Efficient Staff Education's mission is to connect exceptional
+                  educators with schools and institutions that share our
+                  commitment to academic excellence and student success. We
+                  strive to provide personalized and efficient recruitment
+                  services to educators and schools and are passionate about
+                  building client relationships. Our ultimate goal is to ensure
+                  that every student has access to the highest-quality education
+                  possible.
+                </p>
+              </div>
+
+              <div class="about-us-text">
+                <span class="about-us-small">
+                  <img
+                    class="about-us-text-img"
+                    src="Img/our vision.svg"
+                    alt="our vision icon"
+                  />
+                  <p class="about-us-heading">Our Vision</p>
+                </span>
+                <p class="about-us-text-description">
+                  Efficient Staff Education is dedicated to connecting
+                  exceptional educators with schools and institutions that need
+                  them most. We believe that education is the foundation for a
+                  successful future and that teachers are the backbone of our
+                  educational system. We take a personalized approach to
+                  recruitment, working closely with educators and schools to
+                  find the best possible match. Our ultimate goal is to make a
+                  difference in the lives of students, teachers, and
+                  communities.
+                </p>
+              </div>
+              <div class="about-us-text">
+                <span class="about-us-small">
+                  <img
+                    class="about-us-text-img"
+                    src="Img/our commitment.svg"
+                    alt="our commitment"
+                  />
+                  <p class="about-us-heading">Our Commitment</p>
+                </span>
+                <p class="about-us-text-description">
+                  We take a zero-tolerance approach to modern slavery and ensure
+                  our policies and procedures are robust and effective to
+                  prevent and detect it
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="job-section" id="job">
+        <div class="container">
+          <div class="how-it-works">
+            <h2 class="heading-secondary">FEATURED JOBS</h2>
+            <button>
+              <a href="#how" class="btn learn--more btn--full"
+                >Learn more &darr;</a
+              >
+            </button>
+          </div>
+
+          <div class="job-list grid grid--3-cols">
+            <div class="job-listing">
+              <span class="job-urgent"> Urgent </span>
+              <p class="job-subject">Supply Teacher</p>
+              <p class="job-description">
+                <ion-icon class="job-icon" name="location"></ion-icon>Inner
+                London - North
+              </p>
+              <p class="job-description">
+                <ion-icon class="job-icon" name="location"></ion-icon>£135 -
+                £250 per day
+              </p>
+              <p class="job-description">
+                <ion-icon class="job-icon" name="time"></ion-icon>Long Term (up
+                to academic year)
+              </p>
+
+              <p class="job-description">
+                Are you a qualified teacher looking to have a more flexible,
+                manageable work schedule? Efficient Staff are looking for
+                qualified teachers in the Haringey area who want to work across
+                a range of different schools.
+              </p>
+
+              <div class="job-btn">
+                <ul class="job-btn-list">
+                  <li><a href="#contact">Apply Now</a></li>
+                  <li>Actively Hiring</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="job-listing">
+              <span class="job-urgent"> Urgent </span>
+              <p class="job-subject">Year 1 Teacher</p>
+              <p class="job-description">
+                <ion-icon class="job-icon" name="location"></ion-icon>
+                Inner London - South East
+              </p>
+              <p class="job-description">
+                <ion-icon class="job-icon" name="location"></ion-icon>£140 -
+                £250 per day
+              </p>
+              <p class="job-description">
+                <ion-icon class="job-icon" name="time"></ion-icon>Long Term (up
+                to academic year)
+              </p>
+
+              <p class="job-description">
+                Are you a qualified teacher looking for a long-term position? We
+                are supporting a brilliant Lewisham area school who are looking
+                for a Year 1 Teacher for a Maternity cover position.
+              </p>
+
+              <div class="job-btn">
+                <ul class="job-btn-list">
+                  <li><a href="#contact">Apply Now</a></li>
+                  <li>Actively Hiring</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="job-listing">
+              <span class="job-urgent"> Urgent </span>
+              <p class="job-subject">SEN Teacher</p>
+              <p class="job-description">
+                <ion-icon class="job-icon" name="location"></ion-icon>
+                Liverpool City Region
+              </p>
+              <p class="job-description">
+                <ion-icon class="job-icon" name="location"></ion-icon>£150 -
+                £235 per day
+              </p>
+              <p class="job-description">
+                <ion-icon class="job-icon" name="time"></ion-icon>Long Term (up
+                to academic year)
+              </p>
+
+              <p class="job-description">
+                Efficient Staff are recruiting for a SEN Teacher to join a
+                special school for fantastic and vibrant children aged 2 - 11
+                years, who have profound & multiple learning difficulties
+                (PMLD), severe learning difficulties (SLD) and autism spectrum
+                conditions.
+              </p>
+
+              <div class="job-btn">
+                <ul class="job-btn-list">
+                  <li><a href="#contact">Apply Now</a></li>
+                  <li>Actively Hiring</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="job-listing">
+              <span class="job-urgent"> Urgent </span>
+              <p class="job-subject">Exam Invigilator</p>
+              <p class="job-description">
+                <ion-icon class="job-icon" name="location"></ion-icon>
+                Inner London - North
+              </p>
+              <p class="job-description">
+                <ion-icon class="job-icon" name="location"></ion-icon>£12 - £13
+                per hour
+              </p>
+              <p class="job-description">
+                <ion-icon class="job-icon" name="time"></ion-icon>Daily Supply
+              </p>
+
+              <p class="job-description">
+                Efficient Staff is working with a secondary school located in
+                the London Borough of Islington. The school are seeking an Exam
+                Invigilator to join them for the upcoming exam season. Are you
+                seeking your first step into the education sector?
+              </p>
+
+              <div class="job-btn">
+                <ul class="job-btn-list">
+                  <li><a href="#contact">Apply Now</a></li>
+                  <li>Actively Hiring</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="job-listing">
+              <span class="job-urgent"> Urgent </span>
+              <p class="job-subject">SEND Teaching Assistant</p>
+              <p class="job-description">
+                <ion-icon class="job-icon" name="location"></ion-icon>
+                Outer London - North West
+              </p>
+              <p class="job-description">
+                <ion-icon class="job-icon" name="location"></ion-icon>£12 - £17
+                per hour
+              </p>
+              <p class="job-description">
+                <ion-icon class="job-icon" name="time"></ion-icon>Long Term (up
+                to academic year)
+              </p>
+
+              <p class="job-description">
+                Efficient Staff are looking for an SEN Teaching Assistant with
+                experience in behavioural difficulties to work at a Primary
+                School in Harrow. The setting is an alternative provision for
+                children aged 4-11 years old.
+              </p>
+
+              <div class="job-btn">
+                <ul class="job-btn-list">
+                  <li><a href="#contact">Apply Now</a></li>
+                  <li>Actively Hiring</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="job-listing">
+              <span class="job-urgent"> Urgent </span>
+              <p class="job-subject">Music Teacher</p>
+              <p class="job-description">
+                <ion-icon class="job-icon" name="location"></ion-icon>
+                Outer London - South East
+              </p>
+              <p class="job-description">
+                <ion-icon class="job-icon" name="location"></ion-icon>£90 - £160
+                per annum
+              </p>
+              <p class="job-description">
+                <ion-icon class="job-icon" name="time"></ion-icon>Long Term (up
+                to academic year)
+              </p>
+
+              <p class="job-description">
+                Are you a qualified teacher looking to have a more flexible,
+                manageable work schedule? Efficient Staff are looking for
+                qualified teachers in the Haringey area who want to work across
+                a range of different schools.
+              </p>
+
+              <div class="job-btn">
+                <ul class="job-btn-list">
+                  <li><a href="#contact">Apply Now</a></li>
+                  <li>Actively Hiring</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQs section -->
+      <section>
+        <div class="faq-section" id="faq">
+          <span>COMMON QUESTIONS</span>
+          <h3>Frequently Ask Questions</h3>
+          <ul class="faqs">
+            <li class="faq active">
+              <div class="faq-head">
+                <p>What is Efficient Staff Education Ltd?</p>
+                <div class="indicate-icons">
+                  <img
+                    src="Img/assets/icon/Groupicon-close.svg"
+                    class="img-close"
+                    alt="down"
+                  />
+                  <img
+                    src="Img/assets/icon/Groupicon-open.svg"
+                    class="img-open"
+                    alt="up"
+                  />
+                </div>
+              </div>
+              <div class="faq-answer">
+                Efficient Staff Education Ltd is an education recruitment agency
+                that specializes in recruiting and placing staff in schools,
+                colleges, and other educational institutions.
+              </div>
+            </li>
+
+            <li class="faq">
+              <div class="faq-head">
+                <p>
+                  What types of job opportunities does Efficient Staff Education
+                  Ltd offer?
+                </p>
+                <div class="indicate-icons">
+                  <img
+                    src="Img/assets/icon/Groupicon-close.svg"
+                    class="img-close"
+                    alt="down"
+                  />
+                  <img
+                    src="Img/assets/icon/Groupicon-open.svg"
+                    class="img-open"
+                    alt="up"
+                  />
+                </div>
+              </div>
+              <div class="faq-answer">
+                Efficient Staff Education Ltd offers job opportunities in
+                various areas of education, including teaching, administration,
+                support staff, and leadership roles.
+              </div>
+            </li>
+
+            <li class="faq">
+              <div class="faq-head">
+                <p>
+                  What qualifications do I need to have to be eligible for job
+                  opportunities through Efficient Staff Education Ltd?
+                </p>
+                <div class="indicate-icons">
+                  <img
+                    src="Img/assets/icon/Groupicon-close.svg"
+                    class="img-close"
+                    alt="down"
+                  />
+                  <img
+                    src="Img/assets/icon/Groupicon-open.svg"
+                    class="img-open"
+                    alt="up"
+                  />
+                </div>
+              </div>
+              <div class="faq-answer">
+                The qualifications required to be eligible for job opportunities
+                through Efficient Staff Education Ltd depend on the specific job
+                opening. However, in general, you will need to have relevant
+                qualifications and experience in the education sector.
+              </div>
+            </li>
+
+            <li class="faq">
+              <div class="faq-head">
+                <p>
+                  How can Efficient Staff Education Ltd help me find a job in
+                  the education sector?
+                </p>
+                <div class="indicate-icons">
+                  <img
+                    src="Img/assets/icon/Groupicon-close.svg"
+                    class="img-close"
+                    alt="down"
+                  />
+                  <img
+                    src="Img/assets/icon/Groupicon-open.svg"
+                    class="img-open"
+                    alt="up"
+                  />
+                </div>
+              </div>
+              <div class="faq-answer">
+                How can Efficient Staff Education Ltd help me find a job in the
+                education sector? Efficient Staff Education Ltd can help you
+                find job opportunities that match your skills, qualifications,
+                and experience. They have extensive networks in the education
+                sector and can provide you with access to a wide range of job
+                openings.
+              </div>
+            </li>
+
+            <li class="faq">
+              <div class="faq-head">
+                <p>
+                  Do I have to pay a fee to use the services of Efficient Staff
+                  Education Ltd?
+                </p>
+                <div class="indicate-icons">
+                  <img
+                    src="Img/assets/icon/Groupicon-close.svg"
+                    class="img-close"
+                    alt="down"
+                  />
+                  <img
+                    src="Img/assets/icon/Groupicon-open.svg"
+                    class="img-open"
+                    alt="up"
+                  />
+                </div>
+              </div>
+              <div class="faq-answer">
+                No, you do not have to pay a fee to use the services of
+                Efficient Staff Education Ltd. Their fees are usually paid by
+                the educational institutions that hire their candidates.
+              </div>
+            </li>
+
+            <li class="faq">
+              <div class="faq-head">
+                <p>
+                  Can Efficient Staff Education Ltd help me with my job
+                  application?
+                </p>
+                <div class="indicate-icons">
+                  <img
+                    src="Img/assets/icon/Groupicon-close.svg"
+                    class="img-close"
+                    alt="down"
+                  />
+                  <img
+                    src="Img/assets/icon/Groupicon-open.svg"
+                    class="img-open"
+                    alt="up"
+                  />
+                </div>
+              </div>
+              <div class="faq-answer">
+                Yes, Efficient Staff Education Ltd can provide guidance and
+                support throughout the job application process, including
+                helping you prepare your CV, cover letter, and interview skills.
+              </div>
+            </li>
+
+            <li class="faq">
+              <div class="faq-head">
+                <p>
+                  How long does it take to find a job through Efficient Staff
+                  Education Ltd?
+                </p>
+                <div class="indicate-icons">
+                  <img
+                    src="Img/assets/icon/Groupicon-close.svg"
+                    class="img-close"
+                    alt="down"
+                  />
+                  <img
+                    src="Img/assets/icon/Groupicon-open.svg"
+                    class="img-open"
+                    alt="up"
+                  />
+                </div>
+              </div>
+              <div class="faq-answer">
+                The length of time it takes to find a job through Efficient
+                Staff Education Ltd varies depending on various factors such as
+                the specific job opening, your qualifications, and the current
+                demand for educators in the market.
+              </div>
+            </li>
+
+            <li class="faq">
+              <div class="faq-head">
+                <p>
+                  Can Efficient Staff Education Ltd help me find a job overseas?
+                </p>
+                <div class="indicate-icons">
+                  <img
+                    src="Img/assets/icon/Groupicon-close.svg"
+                    class="img-close"
+                    alt="down"
+                  />
+                  <img
+                    src="Img/assets/icon/Groupicon-open.svg"
+                    class="img-open"
+                    alt="up"
+                  />
+                </div>
+              </div>
+              <div class="faq-answer">
+                Yes, Efficient Staff Education Ltd specializes in placing
+                candidates in international schools and can help you find job
+                opportunities overseas.
+              </div>
+            </li>
+
+            <li class="faq">
+              <div class="faq-head">
+                <p>
+                  What support does Efficient Staff Education Ltd offer after I
+                  have been placed in a job?
+                </p>
+                <div class="indicate-icons">
+                  <img
+                    src="Img/assets/icon/Groupicon-close.svg"
+                    class="img-close"
+                    alt="down"
+                  />
+                  <img
+                    src="Img/assets/icon/Groupicon-open.svg"
+                    class="img-open"
+                    alt="up"
+                  />
+                </div>
+              </div>
+              <div class="faq-answer">
+                Efficient Staff Education Ltd provides ongoing support and
+                advice to candidates after they have been placed in a job,
+                including contract negotiations, salary negotiation, and support
+                during the settling-in period.
+              </div>
+            </li>
+
+            <li class="faq">
+              <div class="faq-head">
+                <p>How do I get started with Efficient Staff Education Ltd?</p>
+                <div class="indicate-icons">
+                  <img
+                    src="Img/assets/icon/Groupicon-close.svg"
+                    class="img-close"
+                    alt="down"
+                  />
+                  <img
+                    src="Img/assets/icon/Groupicon-open.svg"
+                    class="img-open"
+                    alt="up"
+                  />
+                </div>
+              </div>
+              <div class="faq-answer">
+                To get started with Efficient Staff Education Ltd, you should
+                contact them to discuss your qualifications, experience, and job
+                preferences. They will then provide you with information about
+                current job openings and how to apply for them.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CTA section -->
+
+      <section class="section-cta" id="contact">
+        <div class="cta-container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary heading-cta">
+                Join our community of talented professionals by applying for a
+                job today!
+              </h2>
+
+              <form
+                accept-charset="UTF-8"
+                action="https://getform.io/f/bf987639-de93-48a5-98f6-532d16ca6697"
+                method="POST"
+                class="cta-form"
+                enctype="multipart/form-data"
+                target="_blank"
+                id="wpform"
+              >
+                <div>
+                  <label for="full-name">Full Name</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="John Smith"
+                    name="full-name"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="email">Email address</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="me@example.com"
+                    name="email"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="myfile">Select a file:</label>
+                  <input type="file" id="myfile" class="myfile" name="myfile" />
+                </div>
+
+                <button class="btn btn--form" type="submit" value="submit">
+                  Apply Now
+                </button>
+
+                <!-- <input type="checkbox" />
+                <input type="number" /> -->
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="Woman enjoying food"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#">
+            <img
+              class="logo"
+              alt="Efficient logo"
+              src="Img/efficienet white logo 1.svg"
+            />
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="https://api.whatsapp.com/send?phone=03337721104"
+                ><ion-icon class="social-icon" name="logo-whatsapp"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2023</span> by Efficients Staff,
+            Inc. All rights reserved.
+          </p>
+          <p class="copyright">Powered by FSL furtherance Support Limited</p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">
+              11 the Spires Selden Hill Hemel Hempstead HP2 4FS
+            </p>
+            <p>
+              <a class="footer-link" href="tel:0333-772-1104">03337721104</a
+              ><br />
+              <a class="footer-link" href="mailto:Info.efficientstaff.edu.uk"
+                >edu@efficientstaff.co.uk</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About Efficients staff</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Cooking partners</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#"> Modern Slavery Act </a></li>
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+  <script src="/script.js"></script>
+</html>
